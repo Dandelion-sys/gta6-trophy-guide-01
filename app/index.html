@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 Grand Theft Auto VI trophies: roadmap, missable warnings, cited guides, saved progress.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Ledger</h1>
+    <p class="tagline">Every trophy, a plan to the platinum, and a checklist that remembers where you are.</p>
+    <div class="progress-wrap" aria-live="polite">
+      <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+      <div class="bar"><div class="bar-fill" id="progressBar" style="width:0%"></div></div>
+      <p class="grade-counts" id="gradeCounts"></p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="roadmap" id="roadmap" aria-labelledby="roadmapTitle">
+    <h2 id="roadmapTitle">Road to the platinum</h2>
+    <p class="roadmap-note">About 200 hours, one playthrough, no online trophies. PowerPyx rates the set 4 out of 10. Cheats disable trophies and saving, so keep them off.</p>
+    <ol class="steps">
+      <li><span class="step-num">1</span><div><h3>Finish the story &mdash; 60&ndash;80 hours</h3><p>Five chapters. Play however you like; progress toward the 100% checklist already counts. Keep a manual save at the start and end of each chapter.</p><p class="step-count" data-stage="Story">0 of 12 story trophies</p></div></li>
+      <li><span class="step-num">2</span><div><h3>Side quests &amp; activities &mdash; 100 hours</h3><p>Questlines for Andy, Kenton, Billy, Randy, Tyrone and Bret, the strangers, the races, stunts and ranges. Most of it feeds the 100% checklist.</p><p class="step-count" data-stage="Side quests">0 of 8 side-quest trophies</p></div></li>
+      <li><span class="step-num">3</span><div><h3>Cleanup to 100% &mdash; 10&ndash;40 hours</h3><p>Open Progress &gt; Stats &gt; 100% Completion after the story. It is closer to 60% true completion, with only 70 of 80 challenges needed. Nothing on it can be missed.</p><p class="step-count" data-stage="Cleanup">0 of 2 cleanup trophies</p></div></li>
+    </ol>
+    <p class="missable-banner" id="missableBanner">&#9888; One trophy can be missed: <strong>Positive Mental Attitude</strong>. In Chapter 1, after the mission Down to Earth, talk to Lucia in the kitchen in the morning, follow her to the balcony and accept her meditation lesson. That home meditation is gone after Chapter 1.</p>
+  </section>
+
+  <section class="toolbar" aria-label="Tracker controls">
+    <div class="toolbar-row">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy name or word&hellip;" autocomplete="off"></label>
+      <label>Kind <select id="kind"><option value="all">All kinds</option><option value="story">Story</option><option value="missable">Missable</option><option value="collectibles">Collectibles</option><option value="activities">Activities</option><option value="completion">Completion</option><option value="online">Online</option></select></label>
+      <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+      <label>Show <select id="show"><option value="all">All trophies</option><option value="earned">Earned only</option><option value="todo">Not earned yet</option></select></label>
+    </div>
+    <div class="toolbar-row">
+      <label class="spoiler"><input id="spoilers" type="checkbox" checked> Hide story trophies until earned (spoiler-safe)</label>
+      <span class="spacer"></span>
+      <button id="export" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+      <button id="reset" type="button">Reset</button>
+    </div>
+    <p class="result-count" id="resultCount"></p>
+  </section>
+
+  <section aria-label="Trophy list">
+    <ul class="trophy-list" id="trophyList"></ul>
+    <p class="empty" id="emptyState" hidden>No trophies match those filters. Clear the search or pick another kind.</p>
+  </section>
+
+  <section class="sources" aria-labelledby="sourcesTitle">
+    <h2 id="sourcesTitle">Sources &amp; how this guide was built</h2>
+    <p>Names, descriptions and grades are the official PlayStation 5 list as published on 18 November 2026. Every guide is written in this project's own words; a specific location or step is only stated when a source below backs it. Where no source has confirmed a method yet, the guide says so instead of guessing.</p>
+    <ul>
+      <li><a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx &mdash; GTA 6 Trophy Guide &amp; Roadmap</a> (roadmap, missable warning, per-trophy methods)</li>
+      <li><a href="https://www.powerpyx.com/gta-6-100-completion-checklist-guide/">PowerPyx &mdash; GTA 6 100% Completion Checklist</a></li>
+      <li><a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase &mdash; Grand Theft Auto VI trophies</a> (official names, descriptions, grades)</li>
+      <li><a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles &mdash; Grand Theft Auto VI trophies</a> (official list, counts)</li>
+      <li><a href="https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series">GTABase &mdash; GTA 6 achievements and trophies list</a></li>
+    </ul>
+    <p class="fineprint">Works fully offline: all data ships in this folder, progress lives in your browser (localStorage), and the app makes no network request. No Rockstar artwork or logos are used. Guide data checked 19 November 2026, launch day; two trophies (Bad Luck, I Guess and Ten Pin) were still unsolved by every source that day.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Ledger &middot; an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Rockstar Games; this guide is not affiliated with or endorsed by Rockstar Games or Sony.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
